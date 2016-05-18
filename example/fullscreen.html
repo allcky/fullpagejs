@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../fullscreen.js"></script>
+	<script>
+	window.onload=function(){
+		var box=document.getElementsByClassName('box')[0];
+		var btn=document.getElementsByTagName('button')[0];
+		btn.onclick=function(){
+			var now=fullstate();
+			if(!now){
+				fullscreen(box);
+			}else{
+				exitfullscreen()
+			}
+		}
+	}
+	</script>
+	<style>
+	body{margin:0;padding:0;}
+	.box{
+		width:600px;
+		height:600px;
+		background:#A50000;
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+	<button>点击全屏</button>	
+
+	</div>
+</body>
+</html>
