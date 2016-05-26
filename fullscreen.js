@@ -4,7 +4,7 @@
 	By  : HNZ
 	Date: 2015-11-09
 
-	List:
+	API List:
 	1.	fullstate()  返回全屏状态 
 					 返回值： true  false
 
@@ -20,7 +20,7 @@
 	5.	exitfullscreen() 退出全屏模式
 
 ---------------------------------------------------*/
-(function(win,doc){
+;(function(win,doc){
 	//获取当前浏览器 ： 属性、方法、事件
 	var set=(function(){
 		if(!(document.mozFullScreenEnabled || document.fullscreenEnabled || document.webkitFullscreenEnabled || document.msFullscreenEnabled)){

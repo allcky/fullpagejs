@@ -20,17 +20,31 @@
 	</script>
 	<style>
 	body{margin:0;padding:0;}
+	html,body{
+		height:100%;
+	}
 	.box{
-		width:600px;
-		height:600px;
+		width:100%;
+		height:100%;
 		background:#A50000;
+		position:relative;
+		color:#fff;
+		font-size:100px;
+		text-align:center;
+		line-height:500px;
+		font-family:'微软雅黑';
+	}
+	.box button{
+		position: absolute;
+		right:0;
+		top:0;
 	}
 	</style>
 </head>
 <body>
 	<div class="box">
 	<button>点击全屏</button>	
-
+		书到用时方恨少!
 	</div>
 </body>
 </html>
